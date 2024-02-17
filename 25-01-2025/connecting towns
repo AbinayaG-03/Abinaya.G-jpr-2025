@@ -16,6 +16,13 @@ import sys
 #
 
 def connectingTowns(n, routes):
+    total_routes = 1 
+
+    for route in routes:
+
+        total_routes = (total_routes * route) % 1234567
+
+    return total_routes
     # Write your code here
 
 if __name__ == '__main__':
